@@ -225,7 +225,7 @@ h1::after {
   font-size: 17px;
 }
 .footer hr {
-  margin-top: 50px;
+  margin-top: 20%;
   background: #65b2f4;
 }
 
@@ -296,4 +296,17 @@ h1::after {
 .button-login:hover::after,
 .contact-form button:hover::after {
   right: 80%;
+}
+/* -------------------Button scroll top page---------------------------------------------*/
+.back2top {
+  position: absolute;
+  right: 1.5%;
+  bottom: 4%;
+  background: #65b2f4;
+  border: 1px solid #fff;
+  width: 3%;
+  height: 6%;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 50%;
 }
