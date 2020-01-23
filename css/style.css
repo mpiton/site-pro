@@ -192,11 +192,11 @@ h1::after {
 }
 .form-control {
   border-radius: 0 !important;
-  border: none !important;
+  border: 1px solid #65b2f4 !important;
   box-shadow: none !important;
 }
 ::placeholder {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .contact-info .follow {
@@ -297,6 +297,30 @@ h1::after {
 .contact-form button:hover::after {
   right: 80%;
 }
+/* Button Modal */
+.btn.btn-info {
+  background-color: #65b2f4;
+  border: 2px solid #65b2f4;
+  border-radius: 0;
+}
+.btn.btn-info:hover {
+  background-color: #fff;
+  border: 2px solid #65b2f4;
+  border-radius: 0;
+  color: #65b2f4;
+}
+.btn.btn-outline-info.waves-effect.ml-auto {
+  background-color: #fff;
+  border: 2px solid #65b2f4;
+  border-radius: 0;
+  color: #65b2f4;
+}
+.btn.btn-outline-info.waves-effect.ml-auto:hover {
+  background-color: #65b2f4;
+  border: 2px solid #65b2f4;
+  border-radius: 0;
+  color: #fff;
+}
 /* -------------------Button scroll top page---------------------------------------------*/
 .back2top {
   position: absolute;
@@ -309,4 +333,159 @@ h1::after {
   color: #fff;
   font-weight: bolder;
   border-radius: 50%;
+}
+
+/* Modal */
+.modal {
+  background: rgba(000, 000, 000, 0.8);
+  min-height: 1000000px;
+}
+.btn.btn-info {
+  position: initial;
+}
+.btn.btn-outline-info.waves-effect.ml-auto {
+  position: initial;
+}
+.md-form label {
+  font-size: 1rem;
+  color: #777;
+  cursor: text;
+  -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  transition: transform 0.2s ease-out, color 0.2s ease-out,
+    -webkit-transform 0.2s ease-out;
+  -webkit-transform: translateY(12px);
+  transform: translateY(12px);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blue-text,
+.nav-link:hover,
+.nav-link,
+.fas.fa-lock.prefix,
+.fas.fa-envelope.prefix {
+  color: #65b2f4;
+}
+.text-md-right > p {
+  color: #777;
+}
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+.modal-dialog.cascading-modal .modal-body,
+.modal-dialog.cascading-modal .modal-footer {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  color: #616161;
+}
+.mb-1,
+.my-1 {
+  margin-bottom: 0.25rem !important;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.md-form {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.mb-5,
+.my-5 {
+  margin-bottom: 3rem !important;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.md-form input:not([type]),
+.md-form input[type="text"]:not(.browser-default),
+.md-form input[type="password"]:not(.browser-default),
+.md-form input[type="email"]:not(.browser-default),
+.md-form input[type="url"]:not(.browser-default),
+.md-form input[type="time"]:not(.browser-default),
+.md-form input[type="date"]:not(.browser-default),
+.md-form input[type="datetime"]:not(.browser-default),
+.md-form input[type="datetime-local"]:not(.browser-default),
+.md-form input[type="tel"]:not(.browser-default),
+.md-form input[type="number"]:not(.browser-default),
+.md-form input[type="search"]:not(.browser-default),
+.md-form input[type="search-md"],
+.md-form textarea.md-textarea {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+.md-form.form-sm .validate {
+  margin-bottom: 2.3rem;
+}
+.md-form .prefix ~ input,
+.md-form .prefix ~ textarea {
+  width: calc(100% - 2.5rem);
+  margin-left: 2.5rem;
+}
+.md-form .form-control {
+  height: auto;
+  padding: 0.6rem 0 0.4rem 0;
+  margin: 0 0 0.5rem 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.fas.fa-envelope.prefix,
+.fas.fa-lock.prefix {
+  font-size: 2em;
+  position: absolute;
 }
